@@ -23,11 +23,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Five steps to detecting the lane lines. 1) For ease convert the image to grayscale. 2) To reduce noise in our image apply a Gaussian smoothing. 3) To identify the edge use the Canny edge detection algorithm. 4) To focus on the lanes only, mask only the region with the lanes. 5) To connect the edges detected as lines run the Hough transform.
 
 ![alt text][image1]
 
